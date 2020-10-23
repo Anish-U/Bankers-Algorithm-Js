@@ -1,4 +1,4 @@
-# Bankers-Algorithm-Js# Railway-Reservation
+# Bankers-Algorithm-Js
 
 Designing a visualizer for Deadlock Avoidance Algorithm - Bankers Algorithm also know as the Advance Claim Algorithm.
 This project helps to visualize and learn how the Bankers Algorithm work.
