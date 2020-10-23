@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./advanceClaim.css">
+    <!-- Title of the page -->
+    <title>Advance Claim Algorithm</title>
+  
+  </head>
+  <body id="body">
+    <!-- Background Animation Starts -->
+    <div class="container">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- Background Animation Ends -->
+
+    <!-- Main Algo Implementation Starts -->
+    <div class="container pt-5">
+      <h2 class="text-center subheading">ADVANCE CLAIM ALGORITHM</h2>
+    </div>
+    <div class="container">
+      <div class="row p-2 pt-5">
+        <!-- Total Instance Form Starts -->
+        <div class="col-4 text-center">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">No of Instances of Resource A</span>
+            </div>
+            <input type="text" size="2" maxlength="2" class="form-control" id="resourceA" required>
+          </div> 
+        </div>
+        <div class="col-4 text-center">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">No of Instances of Resource B</span>
+            </div>
+            <input type="text" size="2" maxlength="2" class="form-control" id="resourceB" required>
+          </div> 
+        </div>
+        <div class="col-4 text-center">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">No of Instances of Resource C</span>
+            </div>
+            <input type="text" size="2" maxlength="2" class="form-control" id="resourceC" required>
+          </div> 
+        </div>
+        <!-- Total Instance Form Ends -->
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <!-- Allocation Form Starts -->
+        <div class="col-3 text-center">
+          <table class="text-center">
+            <thead>
+              <tr>
+                <th colspan="4"><h4>Allocation</h4></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td><input size="2" maxlength="2" id="a11"></td>
+                <td><input size="2" maxlength="2" id="a12"></td>
+                <td><input size="2" maxlength="2" id="a13"></td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td><input size="2" maxlength="2" id="a21"></td>
+                <td><input size="2" maxlength="2" id="a22"></td>
+                <td><input size="2" maxlength="2" id="a23"></td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td><input size="2" maxlength="2" id="a31"></td>
+                <td><input size="2" maxlength="2" id="a32"></td>
+                <td><input size="2" maxlength="2" id="a33"></td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td><input size="2" maxlength="2" id="a41"></td>
+                <td><input size="2" maxlength="2" id="a42"></td>
+                <td><input size="2" maxlength="2" id="a43"></td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td><input size="2" maxlength="2" id="a51"></td>
+                <td><input size="2" maxlength="2" id="a52"></td>
+                <td><input size="2" maxlength="2" id="a53"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Allocation Form Ends -->
+
+        <!-- Max Form Starts -->
+        <div class="col-3 text-center">
+          <table class="text-center">
+            <thead>
+              <tr>
+                <th colspan="4"><h4>Maximum</h4></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td><input size="2" maxlength="2" id="m11"></td>
+                <td><input size="2" maxlength="2" id="m12"></td>
+                <td><input size="2" maxlength="2" id="m13"></td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td><input size="2" maxlength="2" id="m21"></td>
+                <td><input size="2" maxlength="2" id="m22"></td>
+                <td><input size="2" maxlength="2" id="m23"></td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td><input size="2" maxlength="2" id="m31"></td>
+                <td><input size="2" maxlength="2" id="m32"></td>
+                <td><input size="2" maxlength="2" id="m33"></td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td><input size="2" maxlength="2" id="m41"></td>
+                <td><input size="2" maxlength="2" id="m42"></td>
+                <td><input size="2" maxlength="2" id="m43"></td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td><input size="2" maxlength="2" id="m51"></td>
+                <td><input size="2" maxlength="2" id="m52"></td>
+                <td><input size="2" maxlength="2" id="m53"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Max Form Ends -->
+
+        <!-- Need Form Starts -->
+        <div class="col-3 text-center">
+          <table class="text-center">
+            <thead>
+              <tr>
+                <th colspan="4"><h4>Need</h4></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td><input size="2" maxlength="2" id="n11"></td>
+                <td><input size="2" maxlength="2" id="n12"></td>
+                <td><input size="2" maxlength="2" id="n13"></td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td><input size="2" maxlength="2" id="n21"></td>
+                <td><input size="2" maxlength="2" id="n22"></td>
+                <td><input size="2" maxlength="2" id="n23"></td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td><input size="2" maxlength="2" id="n31"></td>
+                <td><input size="2" maxlength="2" id="n32"></td>
+                <td><input size="2" maxlength="2" id="n33"></td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td><input size="2" maxlength="2" id="n41"></td>
+                <td><input size="2" maxlength="2" id="n42"></td>
+                <td><input size="2" maxlength="2" id="n43"></td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td><input size="2" maxlength="2" id="n51"></td>
+                <td><input size="2" maxlength="2" id="n52"></td>
+                <td><input size="2" maxlength="2" id="n53"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Need Form Ends -->
+
+        <!-- Available Form Starts -->
+        <div class="col-3 text-center">
+          <table class="text-center">
+            <thead>
+              <tr>
+                <th colspan="4"><h4>Available</h4></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input size="2" maxlength="2" id="av11"></td>
+                <td><input size="2" maxlength="2" id="av12"></td>
+                <td><input size="2" maxlength="2" id="av13"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Available Form Ends -->
+      </div>
+
+      <!-- Algo Buttons Starts -->
+      <div class="row m-5 text-center">
+        <div class="col-4">
+          <a href="#" class="btn btn-secondary" onclick="example()">Example</a>
+        </div>
+        <div class="col-4">
+          <a href="#" class="btn btn-secondary" onclick="run_algo()">Run Algorithm</a>
+        </div>
+        <div class="col-4">
+          <a href="#" class="btn btn-secondary" onclick="reset()">Reset Values</a>
+        </div>
+      </div>
+      <!-- Algo Buttons Ends -->
+      
+      <!-- Process Sequence Starts -->
+      <div class="row p-3 mt-3 mb-3">
+        <div class="col-6 offset-4">
+          <h4>Process Sequence :</h4><br>
+          <input id="p1" size="2" maxlength="2"/>&nbsp
+          <input id="p2" size="2" maxlength="2"/>&nbsp
+          <input id="p3" size="2" maxlength="2"/>&nbsp
+          <input id="p4" size="2" maxlength="2"/>&nbsp
+          <input id="p5" size="2" maxlength="2"/>
+        </div>
+      </div>
+      <!-- Process Sequence Ends -->
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="./advanceClaim.js"></script>
+  </body>
+</html>
