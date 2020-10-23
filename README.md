@@ -16,3 +16,20 @@ This is a project for CSE course Operating Systems | Vellore Institute of Techno
 
 ---
 
+# Demo
+
+[Visit Demo Website](https://anish-u.github.io/Bankers-Algorithm-Js/)
+
+---
+
+# Implementation Screenshots
+
+### Safe State Example
+<img src="https://github.com/Anish-U/Bankers-Algorithm-Js/blob/main/images/implementation1.jpeg" width="700">
+
+<img src="https://github.com/Anish-U/Bankers-Algorithm-Js/blob/main/images/implementation1_output.jpeg" width="700">
+
+### Deadlock State Example
+<img src="https://github.com/Anish-U/Bankers-Algorithm-Js/blob/main/images/implementation2.jpeg" width="700">
+
+<img src="https://github.com/Anish-U/Bankers-Algorithm-Js/blob/main/images/implementation2_output.jpeg" width="700">
